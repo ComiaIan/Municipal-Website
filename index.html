@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipality of Taysan</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+     
+    </style>
+</head>
+<body>
+
+    <div class="date-time" id="dateTime"></div>
+    <header>
+        <img src="images/image-removebg-preview (1).png" alt="Municipality Logo" style="height: 70px; vertical-align: middle; margin-right: 10px;">
+        <h1 style="display: inline-block; vertical-align: middle;">Municipality of Taysan</h1>
+    </header>
+    
+
+    <nav>
+        <ul>
+            <li><a onclick="showSection('home')">Home</a></li>
+            <li><a onclick="showSection('about')">About</a></li>
+            <li><a onclick="showSection('services')">Services</a></li>
+            <li><a onclick="showSection('contact')">Contact</a></li>
+            <li><a onclick="showSection('transparency')">Transparency</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="section active">
+            <h2>Welcome to Taysan</h2>
+            <div class="cards">
+                <div class="card" onclick="openModal('modal1')">
+                    <h3>Municipal Profile</h3>
+                    <p>Click to learn more.</p>
+                </div>
+                <div class="card" onclick="openModal('modal2')">
+                    <h3>Municipal Government</h3>
+                    <p>Click to learn more.</p>
+                </div>
+                <div class="card" onclick="openModal('modal3')">
+                    <h3>News</h3>
+                    <p>Click to learn more.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Taysan</h2>
+            <p>Taysan was established as a municipality in 1919, evolving from its beginnings as Barrio Mercedes. Over the years, Taysan has grown to be a thriving community, rich in culture and history, while maintaining its agricultural roots.</p>
+        </section>
+
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <div class="cards">
+                <div class="card" onclick="openModal('service1')">
+                    <h3>Online Payments </h3>
+                    <p>Click to learn more.</p>
+                </div>
+                <div class="card" onclick="openModal('service2')">
+                    <h3>Employment</h3>
+                    <p>Click to learn more.</p>
+                </div>
+                <div class="card" onclick="openModal('service3')">
+                    <h3>Social Welfare</h3>
+                    <p>Click to learn more.</p>
+                </div>
+                <div class="card" onclick="openModal('service4')">
+                    <h3>Health</h3>
+                    <p>Click to learn more.</p>
+                </div>
+                <div class="card" onclick="openModal('service5')">
+                    <h3>Scholarship</h3>
+                    <p>Click to learn more.</p>
+                </div>
+                <div class="card" onclick="openModal('service6')">
+                    <h3>Municipal Engineer</h3>
+                    <p>Click to learn more.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>Contact details will go here.</p>
+        </section>
+
+        <div id="modal1" class="modal">
+            <p>Municipal Profile</p>
+            <button onclick="closeModal('modal1')">Close</button>
+        </div>
+        <div id="modal2" class="modal">
+            <p>Municipal Government</p>
+            <button onclick="closeModal('modal2')">Close</button>
+        </div>
+        <div id="modal3" class="modal">
+            <p>News</p>
+            <button onclick="closeModal('modal3')">Close</button>
+        </div>
+        <div id="service1" class="modal">
+            <p>Details about Service 1</p>
+            <button onclick="closeModal('service1')">Close</button>
+        </div>
+        <div id="service2" class="modal">
+            <p>Details about Service 2</p>
+            <button onclick="closeModal('service2')">Close</button>
+        </div>
+        <div id="service3" class="modal">
+            <p>Details about Service 3</p>
+            <button onclick="closeModal('service3')">Close</button>
+        </div>
+        <div id="service4" class="modal">
+            <p>Details about Service 4</p>
+            <button onclick="closeModal('service4')">Close</button>
+        </div>
+        <div id="service5" class="modal">
+            <p>Details about Service 5</p>
+            <button onclick="closeModal('service5')">Close</button>
+        </div>
+        <div id="service6" class="modal">
+            <p>Details about Service 6</p>
+            <button onclick="closeModal('service6')">Close</button>
+        </div>
+
+        <div id="overlay" class="overlay" onclick="closeAllModals()"></div>
+
+        <section id="transparency" class="section">
+
+            <div class="cards">
+                <div class="card" onclick="openModal('service1')">
+                    <h3>Citizen's Charter </h3>
+                    <p>Click to learn more.</p>
+                </div>
+                <div class="card" onclick="openModal('service2')">
+                    <h3>Job Opportunities</h3>
+                    <p>Click to learn more.</p>
+                </div>
+                <div class="card" onclick="openModal('service3')">
+                    <h3>Gender and Development</h3>
+                    <p>Click to learn more.</p>
+                </div>
+                <div class="card" onclick="openModal('service4')">
+                    <h3>Public Data</h3>
+                    <p>Click to learn more.</p>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+        
+
+    <footer>
+        <p>&copy; 2025 Municipality of Taysan. All rights reserved.</p>
+    </footer>
+
+   <script src="script.js">
+       
+    </script>
+</body>
+</html>
